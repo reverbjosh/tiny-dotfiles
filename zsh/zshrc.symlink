@@ -66,3 +66,6 @@ run() {
     goc
     wine cmd /c run-$1.bat
 }
+
+export PATH="/home/jshou/android-sdk-linux_x86/platform-tools:$PATH"
+export PATH="/home/jshou/android-sdk-linux_x86/tools:$PATH"
