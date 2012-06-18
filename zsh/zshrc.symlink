@@ -69,3 +69,6 @@ run() {
 
 export PATH="/home/jshou/android-sdk-linux_x86/platform-tools:$PATH"
 export PATH="/home/jshou/android-sdk-linux_x86/tools:$PATH"
+export PYTHON_BIN="/usr/bin/python"
+
+alias brake="noglob bundle exec rake"
