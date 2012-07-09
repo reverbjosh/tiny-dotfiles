@@ -66,3 +66,6 @@ let g:vimroom_width=150
 
 "shortcut for toggling nerdtree
 map <F2> :NERDTreeToggle<CR>
+
+" deleting buffer without closing the window
+map <F4> :bp<bar>sp<bar>bn<bar>bd<CR>
