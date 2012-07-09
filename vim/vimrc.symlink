@@ -1,13 +1,5 @@
 call pathogen#infect()
 
-" pathogen
-" supertab
-" l9
-" powerline
-" fuzzy finder
-" fugitive
-" BufExplorer
-
 syntax on
 filetype indent on
 set fileencodings=utf8 ",latin1
@@ -71,3 +63,6 @@ let g:vimroom_width=150
 
 "set foldmethod=syntax
 "set foldminlines=3
+
+"shortcut for toggling nerdtree
+map <F2> :NERDTreeToggle<CR>
