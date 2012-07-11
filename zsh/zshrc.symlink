@@ -48,25 +48,6 @@ export JAVA_HOME="/usr/lib/jvm/java-6-sun"
 export PATH="/usr/local/mysql/bin:$PATH"
 export ANDROID_HOME='/home/jshou/android-sdk-linux_x86/'
 
-# WINE WINE WINE
-prefix() {
-    export WINEPREFIX="$HOME/.local/share/wineprefixes/$1"
-}
-
-goc() {
-    cd $WINEPREFIX/drive_c
-}
-
-lsp() {
-    ls $* $HOME/.local/share/wineprefixes
-}
-
-run() {
-    prefix $1
-    goc
-    wine cmd /c run-$1.bat
-}
-
 export PATH="/home/jshou/android-sdk-linux_x86/platform-tools:$PATH"
 export PATH="/home/jshou/android-sdk-linux_x86/tools:$PATH"
 export PATH="/home/jshou/bin/idea-IC-117.418/bin:$PATH"
