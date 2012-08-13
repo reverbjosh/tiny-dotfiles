@@ -44,12 +44,12 @@ alias tmux="tmux -2"
 export PREFIX="/home/jshou/local"
 alias mpc='mpc -f "%album% -- %track% %title%"'
 export PATH="/usr/local/bin/idea-IC-111.277/bin:/usr/local/bin/apache-maven-3.0.4/bin:$PATH"
-export JAVA_HOME="/usr/lib/jvm/java-6-sun"
+export JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64"
 export PATH="/usr/local/mysql/bin:$PATH"
 export ANDROID_HOME='/home/jshou/android-sdk-linux_x86/'
 
-export PATH="/home/jshou/android-sdk-linux_x86/platform-tools:$PATH"
-export PATH="/home/jshou/android-sdk-linux_x86/tools:$PATH"
+export PATH="/home/jshou/android-sdk-linux/platform-tools:$PATH"
+export PATH="/home/jshou/android-sdk-linux/tools:$PATH"
 export PATH="/home/jshou/bin/idea-IC-117.418/bin:$PATH"
 export PYTHON_BIN="/usr/bin/python"
 
