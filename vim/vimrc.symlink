@@ -59,13 +59,6 @@ set backspace=indent,eol,start
 " visual beep, so that there's no annoying beep
 set vb
 
-
-" vimroom
-let g:vimroom_width=150
-
-"set foldmethod=syntax
-"set foldminlines=3
-
 "shortcut for toggling nerdtree
 map <F2> :NERDTreeToggle<CR>
 
