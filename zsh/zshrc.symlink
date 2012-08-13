@@ -54,3 +54,4 @@ export PATH="/home/jshou/bin/idea-IC-117.418/bin:$PATH"
 export PYTHON_BIN="/usr/bin/python"
 
 alias brake="noglob bundle exec rake"
+export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
