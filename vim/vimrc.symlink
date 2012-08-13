@@ -15,6 +15,7 @@ let mapleader = ","
 map <leader>t :FufFile <CR>
 map <leader>w :FufRenewCache <CR>
 " map <leader>b :FufBuffer <CR>
+map <leader>l :TagbarToggle <CR>
 
 imap <C-a> <Esc>0i
 imap <C-e> <Esc>$a
