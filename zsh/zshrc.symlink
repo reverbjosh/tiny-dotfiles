@@ -57,3 +57,5 @@ alias brake="noglob bundle exec rake"
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 
 export PATH=/opt/vagrant/bin:$PATH
+
+[[ $TERM != "screen" ]] && exec tmux
