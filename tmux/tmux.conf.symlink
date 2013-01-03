@@ -1,14 +1,11 @@
 set -g mode-mouse on
 set -g base-index 1
-# unbind C-b
-# set -g prefix C-o
+unbind C-b
+set -g prefix C-o
 set -s escape-time 0
 
 # Reload key
 bind r source-file ~/.tmux.conf
-
-bind-key C-o last-pane
-bind-key C-i last-window
 
 # set-option -g default-command "reattach-to-user-namespace -l zsh" # for enabling copy paste in osx
 
