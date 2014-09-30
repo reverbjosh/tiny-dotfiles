@@ -19,14 +19,16 @@ set-window-option -g mode-mouse on
 set -g mouse-utf8 on
 
 # use "v" and "s" to do vertical/horizontal splits, like vim
-bind s split-window -v
-bind v split-window -h
+bind s split-window -v -c "#{pane_current_path}"
+bind v split-window -h -c "#{pane_current_path}"
 
 # use the vim motion keys to move between panes
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
+
+bind c new-window -c "#{pane_current_path}"
 
 # use vim motion keys while in copy mode
 setw -g mode-keys vi
