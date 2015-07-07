@@ -2,6 +2,7 @@ require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
 task :install do
+  `git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell`
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
