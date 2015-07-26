@@ -18,7 +18,6 @@ do
     then
       printf "File already exists: $target, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all "
       read input
-      echo "your input was: $input"
 
       case $input in
         o )
