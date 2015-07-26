@@ -12,7 +12,7 @@ do
   file=`basename $linkable | sed s/.symlink//`
   target="$HOME/.$file"
 
-  if [ -e $target ] | [ -L $target ]
+  if [ -e $target ]
   then
     if [ skip_all != true ] || [ overwrite_all != true ] || [ backup_all != true ]
     then
