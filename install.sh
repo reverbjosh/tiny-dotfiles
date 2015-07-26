@@ -41,12 +41,12 @@ do
       esac
     fi
 
-    if [ overwrite == true ] || [ overwrite_all == true ]
+    if [ $overwrite == true ] || [ $overwrite_all == true ]
     then
       rm $target
     fi
 
-    if [ backup == true ] || [ backup_all == true ]
+    if [ $backup == true ] || [ $backup_all == true ]
     then
       mv "$HOME/.$file" "$HOME/.$file.backup"
     fi
