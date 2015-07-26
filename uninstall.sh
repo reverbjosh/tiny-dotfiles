@@ -13,6 +13,7 @@ do
 
   # replace any backups made during installation
   if [ -e "$HOME/.$file.backup" ]
+  then
     mv "$HOME/.$file.backup" "$HOME/.$file"
   fi
 done
