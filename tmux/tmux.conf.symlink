@@ -16,7 +16,7 @@ set-option -g mouse-resize-pane on
 set-window-option -g mode-mouse on
 
 # not really sure what this does, but with it, the scrollwheel works inside Vim
-set -g mouse-utf8 on
+set -g mouse-utf8 off
 
 # use "v" and "s" to do vertical/horizontal splits, like vim
 bind s split-window -v -c "#{pane_current_path}"
