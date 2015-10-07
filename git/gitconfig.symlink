@@ -7,3 +7,5 @@
 	browser = google-chrome
 [color]
 	ui = true
+[push]
+	default = simple
