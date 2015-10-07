@@ -32,7 +32,7 @@ alias pbpaste='xsel --clipboard --output'
 
 export PATH="/opt/node/bin:$PATH"
 
-alias tree="tree -C -I 'venv|__pycache__'"
+alias tree="tree -C -I 'venv|__pycache__|node_modules|bower_components'"
 alias be='nocorrect bundle exec'
 alias sudo='nocorrect sudo'
 
