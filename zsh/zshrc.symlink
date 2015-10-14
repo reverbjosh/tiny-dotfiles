@@ -45,6 +45,9 @@ export PATH="/usr/local/mysql/bin:$PATH"
 
 alias brake="noglob bundle exec rake"
 
+alias gs="git status"
+alias gc="git checkout"
+
 # bug in gconf prevents gnome-apps from being started unless this is unset:
 # http://askubuntu.com/questions/51132/gnome-open-raises-this-error-when-run-from-inside-tmux
 unset DBUS_SESSION_BUS_ADDRESS
