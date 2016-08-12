@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /home/jshou/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = jshou
 	email = joshuahou@gmail.com
