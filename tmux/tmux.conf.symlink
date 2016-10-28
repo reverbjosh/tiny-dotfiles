@@ -1,4 +1,4 @@
-set -g mode-mouse on
+set -g mouse on
 set -g base-index 1
 unbind C-b
 set -g prefix C-o
@@ -8,12 +8,6 @@ set -s escape-time 0
 bind r source-file ~/.tmux.conf
 
 # set-option -g default-command "reattach-to-user-namespace -l zsh" # for enabling copy paste in osx
-
-set-option -g mouse-select-pane on
-set-option -g mouse-select-window on
-set-option -g mouse-resize-pane on
-
-set-window-option -g mode-mouse on
 
 # not really sure what this does, but with it, the scrollwheel works inside Vim
 set -g mouse-utf8 off
