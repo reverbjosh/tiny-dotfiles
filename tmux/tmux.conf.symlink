@@ -28,6 +28,8 @@ bind c new-window -c "#{pane_current_path}"
 setw -g mode-keys vi
 #set -g status-keys vi
 
+bind C-b setw synchronize-panes
+
 # use the vim resize keys.
 # the number at the end is how much the pane will be resized,
 # and 1 is fairly small -- you might want to tweak this.
