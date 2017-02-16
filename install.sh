@@ -50,6 +50,11 @@ do
       esac
     fi
 
+    if [ $skip_all == true ]
+    then
+      exit
+    fi
+
     if [ $overwrite == true ] || [ $overwrite_all == true ]
     then
       rm $target
