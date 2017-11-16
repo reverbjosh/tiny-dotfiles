@@ -1,8 +1,10 @@
 set -g mouse on
 set -g base-index 1
 unbind C-b
-set -g prefix C-o
+set -g prefix C-t
 set -s escape-time 0
+
+bind t send-keys "C-t"
 
 # Reload key
 bind r source-file ~/.tmux.conf
