@@ -1,5 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
+	pager = less -F -X
 [user]
 	name = jshou
 	email = joshuahou@gmail.com
@@ -9,3 +10,5 @@
 	ui = true
 [push]
 	default = simple
+[alias]
+  superlog = ! git log | vim -R -
