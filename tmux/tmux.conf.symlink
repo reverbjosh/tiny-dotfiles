@@ -37,6 +37,9 @@ bind - resize-pane -D 1
 bind + resize-pane -U 1
 bind < resize-pane -L 1
 
+set -g default-terminal "screen-256color"
+set -g default-shell $SHELL
+
 # theming of status bar
 set -g status-left-length 52
 set -g status-right-length 451
