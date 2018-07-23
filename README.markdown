@@ -5,13 +5,14 @@
 - `git clone git://github.com/jshou/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `./install.sh`
+- `./dependencies.sh`
 
 The install script will symlink the appropriate files in `.dotfiles` to your
 home directory. Everything is configured and tweaked within `~/.dotfiles`,
 though.
 
-The main file you'll want to change right off the bat is `zsh/zshrc.symlink`,
-which sets up a few paths that'll be different on your particular machine.
+`dependencies.sh` will install libs and utils that I like. It expects
+`install.sh` to have been run already.
 
 ## topical
 
