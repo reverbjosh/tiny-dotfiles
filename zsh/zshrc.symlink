@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="risto"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git nyan rbenv autojump)
+plugins=(git nyan rbenv autojump asdf)
 
 source $ZSH/oh-my-zsh.sh
 
