@@ -10,8 +10,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias rm='rm -i'
 
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
+# alias pbcopy='xsel --clipboard --input'
+# alias pbpaste='xsel --clipboard --output'
 
 alias tree="tree -C -I 'venv|__pycache__|node_modules|bower_components'"
 alias be='nocorrect bundle exec'
