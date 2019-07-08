@@ -36,3 +36,4 @@ bindkey '\C-x\C-e' edit-command-line
 
 export PATH="$HOME/dev/idt:$PATH"
 export IDT_DATA=~/Dropbox/idt_data
+export TERM=xterm-256color
