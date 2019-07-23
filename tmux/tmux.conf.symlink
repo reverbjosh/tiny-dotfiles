@@ -37,6 +37,12 @@ bind - resize-pane -D 1
 bind + resize-pane -U 1
 bind < resize-pane -L 1
 
+# vim paste buffer
+bind P paste-buffer
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
+bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
+
 set -g default-terminal "screen-256color"
 set -g default-shell $SHELL
 
