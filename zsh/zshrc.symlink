@@ -13,6 +13,7 @@ alias rm='rm -i'
 # alias pbcopy='xsel --clipboard --input'
 # alias pbpaste='xsel --clipboard --output'
 
+alias ag='ag --path-to-ignore ~/.ignore'
 alias tree="tree -C -I 'venv|__pycache__|node_modules|bower_components'"
 alias be='nocorrect bundle exec'
 alias sudo='nocorrect sudo'
