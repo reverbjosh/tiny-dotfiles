@@ -2,7 +2,7 @@
 
 ## install
 
-- `git clone git://github.com/jshou/dotfiles ~/.dotfiles`
+- `git clone git@github.com:jshou/dotfiles.git ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `./install.sh`
 - `./dependencies.sh`
