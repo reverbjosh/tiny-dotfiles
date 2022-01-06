@@ -23,6 +23,7 @@ esac
 install zsh
 install tmux
 install autojump
+install direnv
 
 # install oh-my-zsh
 echo "installing oh-my-zsh"
