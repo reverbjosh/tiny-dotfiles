@@ -9,32 +9,31 @@ plugins=(git rbenv autojump asdf)
 source $ZSH/oh-my-zsh.sh
 
 alias rm='rm -i'
-
 # alias pbcopy='xsel --clipboard --input'
 # alias pbpaste='xsel --clipboard --output'
-
 alias ag='ag --path-to-ignore ~/.ignore'
 alias tree="tree -C -I 'venv|__pycache__|node_modules|bower_components'"
 alias be='nocorrect bundle exec'
 alias sudo='nocorrect sudo'
+alias brake="noglob bundle exec rake"
+alias gs="git status"
+alias gc="git checkout"
 
 export EDITOR=vim
 
+# Term and tmux use colors
 alias tmux="tmux -2" # force tmux to 256 colors
-
-alias brake="noglob bundle exec rake"
-
-alias gs="git status"
-alias gc="git checkout"
+export TERM=xterm-256color
 
 # bug in gconf prevents gnome-apps from being started unless this is unset:
 # http://askubuntu.com/questions/51132/gnome-open-raises-this-error-when-run-from-inside-tmux
 unset DBUS_SESSION_BUS_ADDRESS
 
+# allow editing command line in fullscreen editor
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '\C-x\C-e' edit-command-line
 
+# IDT vars
 export PATH="$HOME/dev/idt:$PATH"
 export IDT_DATA=~/Dropbox/idt_data
-export TERM=xterm-256color
