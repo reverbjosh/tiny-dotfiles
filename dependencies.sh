@@ -24,6 +24,7 @@ install zsh
 install tmux
 install autojump
 install direnv
+install nvim
 
 # install oh-my-zsh
 echo "installing oh-my-zsh"

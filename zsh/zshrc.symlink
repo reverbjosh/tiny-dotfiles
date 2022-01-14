@@ -18,6 +18,7 @@ alias sudo='nocorrect sudo'
 alias brake="noglob bundle exec rake"
 alias gs="git status"
 alias gc="git checkout"
+alias vim="nvim"
 
 export EDITOR=vim
 
