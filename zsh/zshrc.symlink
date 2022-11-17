@@ -20,7 +20,7 @@ alias gs="git status"
 alias gc="git checkout"
 alias vim="nvim"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # Term and tmux use colors
 alias tmux="tmux -2" # force tmux to 256 colors
