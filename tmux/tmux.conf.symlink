@@ -61,6 +61,7 @@ set -g status-left '#[fg=colour235,bg=colour252,bold] $ #S #[fg=colour252,bg=col
 set -g window-status-format "#[fg=white,bg=colour234] #I #W "
 set -g window-status-current-format "#[fg=colour25,bg=colour39,noreverse,bold] #I | #W #[fg=colour39,bg=colour234,nobold]"
 set -g status-right '"#(uname -n)" %R %d-%b-%y'
+set -g renumber-windows on
 
 # tmux plugins
 set -g @plugin 'tmux-plugins/tmux-resurrect'
