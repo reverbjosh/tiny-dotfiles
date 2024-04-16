@@ -8,7 +8,7 @@ if [ ! -d ~/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
-for linkable in `ls */**.symlink`
+for linkable in `ls *.symlink`
 do
   overwrite=false
   backup=false
