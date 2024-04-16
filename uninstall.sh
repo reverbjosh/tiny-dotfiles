@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for linkable in `ls */**.symlink`
+for linkable in `ls **.symlink`
 do
   file=`basename $linkable | sed s/.symlink//`
   target="$HOME/.$file"
