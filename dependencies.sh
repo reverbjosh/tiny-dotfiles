@@ -30,11 +30,6 @@ install nvim
 echo "installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# link (n)vim directory
-ln -s ~/.dotfiles/vim ~/.vim
-mkdir -p ~/.config/nvim
-ln -s ~/.dotfiles/nvim.init.vim ~/.config/nvim/init.vim
-
 # install vim plug
  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -42,3 +37,20 @@ ln -s ~/.dotfiles/nvim.init.vim ~/.config/nvim/init.vim
 # install nvim plug
  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# link (n)vim directories
+if [ -d ~/.vim ]
+then
+  echo '~/.vim already exists, remove before running'
+else
+  ln -s ~/.dotfiles/vim ~/.vim
+fi
+
+
+if [ -d ~/.config/nvim ]
+then
+  echo '~/.config/nvim already exists, remove before running'
+else
+  mkdir -p ~/.config/nvim
+  ln -s ~/.dotfiles/nvim.init.vim ~/.config/nvim/init.vim
+fi
