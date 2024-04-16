@@ -27,16 +27,22 @@ install direnv
 install nvim
 
 # install oh-my-zsh
-echo "installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ -d ~/.oh-my-zsh ]
+then
+  echo "oh-my-zsh already installed. skipping"
+else
+  echo "installing oh-my-zsh"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 
 # install vim plug
- curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # install nvim plug
- sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # link (n)vim directories
 if [ -d ~/.vim ]
