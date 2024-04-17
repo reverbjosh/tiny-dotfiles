@@ -63,3 +63,5 @@ do
 
   ln -s "$PWD/$linkable" "$target"
 done
+
+make
