@@ -2,7 +2,7 @@
 
 skip_all=false
 overwrite_all=false
-backup_all=false
+backup_all=true
 
 if [ ! -d ~/.tmux/plugins/tpm ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
