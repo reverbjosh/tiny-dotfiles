@@ -18,9 +18,8 @@ alias sudo='nocorrect sudo'
 alias brake="noglob bundle exec rake"
 alias gs="git status"
 alias gc="git checkout"
-alias vim="nvim"
 
-export EDITOR=nvim
+export EDITOR=vim
 
 # Term and tmux use colors
 alias tmux="tmux -2" # force tmux to 256 colors
@@ -38,3 +37,5 @@ bindkey '\C-x\C-e' edit-command-line
 # IDT vars
 export PATH="$HOME/dev/idt:$PATH"
 export IDT_DATA=~/Dropbox/idt_data
+
+alias guitar="cowsay \"do you mean accordion?\""
