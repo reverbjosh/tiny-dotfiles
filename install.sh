@@ -66,6 +66,7 @@ done
 
 echo STUFF
 echo $PATH
+whoami
 which asdf || true
 echo STUFF_END
 cd /workspaces/rql && make
