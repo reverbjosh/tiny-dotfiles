@@ -64,4 +64,8 @@ do
   ln -s "$PWD/$linkable" "$target"
 done
 
+echo STUFF
+echo $PATH
+which asdf || true
+echo STUFF_END
 cd /workspaces/rql && make
