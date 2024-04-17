@@ -64,10 +64,9 @@ do
   ln -s "$PWD/$linkable" "$target"
 done
 
-echo STUFF
+echo "Prime RQL Boot with stuff it needs"
 . "$HOME/.asdf/asdf.sh"
 echo $PATH
 whoami
-which asdf || true
-echo STUFF_END
 cd /workspaces/rql && make
+echo "DONE ( Prime RQL Boot with stuff it needs )"
