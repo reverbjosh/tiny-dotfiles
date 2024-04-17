@@ -65,6 +65,7 @@ do
 done
 
 echo STUFF
+. "$HOME/.asdf/asdf.sh"
 echo $PATH
 whoami
 which asdf || true
